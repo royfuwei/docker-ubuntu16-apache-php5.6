@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  web:
+    image: royfuwei/ubuntu16-apache-php5.6:latest
+    # 如果需要用文件內的dockerfile，使用build，註解image
+    # build: .
+    restart: always
+    volumes:  
+      - ./www:/var/www/html
+    # port 自己主機port(localhost:port):image對外的port
+    ports:
+      - 80:80
