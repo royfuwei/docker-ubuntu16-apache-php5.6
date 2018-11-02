@@ -15,7 +15,7 @@ cd <file>
 # 如果要改port，到docker-compose.yml
 docker-compose up -d
 
-# 如果需要從dockerfile開始製作image，到docker-compose.yml，image改成build
+# 如果需要從dockerfile開始製作image，到docker-compose.yml，image改成build
 docker-compose build
 docker-compose up -d
 
